@@ -1,0 +1,116 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #96bcfd;
+}
+
+#projects {
+  background-color: #96bcfd;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+/* My Laptop */
+.laptop-box {
+  position: relative;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  height: 500px;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.laptop-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.laptop-box:hover::before {
+  opacity: 0.2;
+}
+
+.laptop-box::after {
+  content: "LAPTOP";
+  position: absolute;
+  color: #fff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  left: 50%;
+  top: 350px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.laptop-box:hover::after {
+  opacity: 0.2;
+}
+
+.laptop-name {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
+}
+
+.laptop-box:hover .laptop-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.laptop-details-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(-50%, 0, 100px);
+}
+
+.laptop-box:hover .laptop-details-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.laptop-img {
+  max-width: 230px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  transition: 0.5s;
+  transform: translate3d(-50%, -50%, 80px);
+}
+
+.laptop-box:hover .laptop-img {
+  transform: translate3d(-50%, -52%, 100px) scale(1.2) rotate(3deg);
+  filter: drop-shadow(1px 1px 2px #333);
+}
